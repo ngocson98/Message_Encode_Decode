@@ -26,12 +26,14 @@ So this is what we will do in this python project. Let’s start!
      root.geometry('500x300')
      root.resizable(0,0)
      root.title("SON BK - Message Encode and Decode")
+     
 + ***Tk()*** initialized tkinter which means window created
 + ***geometry()*** set the width and height of the window
 + ***resizable(0,0)*** set the fixed size of the window
 + ***title()*** set the title of the window
 
 ***Label()*** widget use to display one or more than one line of text that users aren’t able to modify.
+
      Label(root, text='ENCODE DECODE', font='arial 20 bold').pack()
      Label(root, text='SON BK', font='arial 20 bold').pack(side=BOTTOM)
 
@@ -46,7 +48,6 @@ So this is what we will do in this python project. Let’s start!
     mode = StringVar()
     Result = StringVar()
  
- 
 + ***Text*** variable stores the message to encode and decode
 + ***private_key*** variable store the private key used to encode and decode
 + ***mode*** is used to select that is either encoding or decoding
@@ -60,6 +61,7 @@ So this is what we will do in this python project. Let’s start!
            key_c = key[i % len(key)]
            enc.append(chr((ord(message[i]) + ord(key_c)) % 256))
        return base64.urlsafe_b64encode("".join(enc).encode()).decode()
+       
 + ***enc = []*** is an empty list
 + We run loop till the length of the message
 + ***i % len(key)*** gives the remainder of division between i and len(key) and that remainder used as an index of key the value of key at that index is stored in key_c
@@ -136,6 +138,7 @@ So this is what we will do in this python project. Let’s start!
     rootmainloop()
 ## Output
 ![encode](https://user-images.githubusercontent.com/87347502/133914798-5eee6f06-bc1f-46e1-908d-b826a05a54d8.png)
+![Decode](https://user-images.githubusercontent.com/87347502/133914860-864a7098-f4a6-430e-95e4-eaee9d1e2265.png)
 
 # Thank you!
 
