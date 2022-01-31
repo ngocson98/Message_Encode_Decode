@@ -140,6 +140,7 @@ So this is what we will do in this python project. Let’s start!
 ![encode](https://user-images.githubusercontent.com/87347502/133914798-5eee6f06-bc1f-46e1-908d-b826a05a54d8.png)
 ![Decode](https://user-images.githubusercontent.com/87347502/133914860-864a7098-f4a6-430e-95e4-eaee9d1e2265.png)
 
+# HAPPY NEW YEAR!
 # Thank you!
 
 
